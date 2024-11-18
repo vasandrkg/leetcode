@@ -1,0 +1,11 @@
+# vasandrkg .gitignore file
+
+.git/
+
+.idea
+.idea/
+
+.vscode
+.vscode/
+
+.DS_Store
