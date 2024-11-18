@@ -27,7 +27,8 @@ package main
 import "fmt"
 
 func main() {
-
+	
+	// test data
 	nums0 := []int{1, 2, 5, 3, 4, 5}
 	nums1 := []int{1, 2, 3, 4, 5}
 	nums2 := []int{1, 2, 5, 3, 4, 4, 5}
@@ -36,7 +37,7 @@ func main() {
 	fmt.Println("===================")
 	fmt.Printf("First Solution")
 	fmt.Println("===================\n\n")
-	
+
 	containsDuplicate(nums0)	  
 	containsDuplicate(nums1)
   	containsDuplicate(nums2)
@@ -50,7 +51,6 @@ func main() {
 	containsDuplicate2(nums1)
 	containsDuplicate2(nums2)
 	containsDuplicate2(nums3)
-
 
 }
 
@@ -79,6 +79,7 @@ func containsDuplicate(nums []int) bool {
 	fmt.Println(b, "from ontainsDuplicate")
 	return b
 }
+
 
 //second solution
 func containsDuplicate2(nums []int) bool {
