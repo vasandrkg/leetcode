@@ -34,8 +34,8 @@ func main() {
 	nums3 := []int{1}
 
 	fmt.Println("===================")
-	fmt.Printf("First Solution \n\n")
-	fmt.Println("===================")
+	fmt.Printf("First Solution")
+	fmt.Println("===================\n\n")
 	
 	containsDuplicate(nums0)	  
 	containsDuplicate(nums1)
@@ -43,8 +43,8 @@ func main() {
   	containsDuplicate(nums3)
 
 	fmt.Println("===================")
-	fmt.Printf("Second Solution \n\n")	
-	fmt.Println("===================")
+	fmt.Printf("Second Solution")	
+	fmt.Println("===================\n\n")
 	
 	containsDuplicate2(nums0)
 	containsDuplicate2(nums1)
