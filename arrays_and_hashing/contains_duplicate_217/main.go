@@ -61,7 +61,7 @@ func containsDuplicate(nums []int) bool {
 
 	if len(nums) == 1 {
 		b = false
-		fmt.Println(b, "from containsDuplicate")
+		fmt.Println(b, "from function containsDuplicate")
 		return b
 	}
 
@@ -71,12 +71,12 @@ func containsDuplicate(nums []int) bool {
 	for _, val := range x {
 		if val > 1 {
 			b = true
-			fmt.Println(b, "from containsDuplicate")
+			fmt.Println(b, "from function containsDuplicate")
 			return b
 		}
 	}
 	b = false
-	fmt.Println(b, "from ontainsDuplicate")
+	fmt.Println(b, "from function containsDuplicate")
 	return b
 }
 
@@ -89,6 +89,6 @@ func containsDuplicate2(nums []int) bool {
 		s[nums[i]] = true
 	}
 	b2 := (len(s) != len(nums))
-	fmt.Println(b2, "from containsDuplicate2")
+	fmt.Println(b2, "from function containsDuplicate2")
 	return b2
 }
