@@ -33,17 +33,20 @@ func main() {
 	nums2 := []int{1, 2, 5, 3, 4, 4, 5}
 	nums3 := []int{1}
 
-	containsDuplicate(nums0)
-	containsDuplicate2(nums0)
-  
+	fmt.Println("===================")
+	fmt.Printf("First Solution \n\n")
+	containsDuplicate(nums0)	  
 	containsDuplicate(nums1)
+  	containsDuplicate(nums2)
+  	containsDuplicate(nums3)
+
+	fmt.Println("===================")
+	fmt.Printf("Second Solution \n\n")	
+	containsDuplicate2(nums0)
 	containsDuplicate2(nums1)
-	
-  containsDuplicate(nums2)
 	containsDuplicate2(nums2)
-	
-  containsDuplicate(nums3)
 	containsDuplicate2(nums3)
+
 
 }
 
