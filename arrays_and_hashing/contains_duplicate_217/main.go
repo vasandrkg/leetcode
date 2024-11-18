@@ -35,6 +35,8 @@ func main() {
 
 	fmt.Println("===================")
 	fmt.Printf("First Solution \n\n")
+	fmt.Println("===================")
+	
 	containsDuplicate(nums0)	  
 	containsDuplicate(nums1)
   	containsDuplicate(nums2)
@@ -42,6 +44,8 @@ func main() {
 
 	fmt.Println("===================")
 	fmt.Printf("Second Solution \n\n")	
+	fmt.Println("===================")
+	
 	containsDuplicate2(nums0)
 	containsDuplicate2(nums1)
 	containsDuplicate2(nums2)
