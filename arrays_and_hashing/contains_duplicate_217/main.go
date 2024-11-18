@@ -80,7 +80,7 @@ func containsDuplicate2(nums []int) bool {
 	for i := 0; i < len(nums); i++ {
 		s[nums[i]] = true
 	}
-	b2 := len(s) != len(nums)
+	b2 := (len(s) != len(nums))
 	fmt.Println(b2, "from containsDuplicate2")
 	return b2
 }
