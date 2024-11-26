@@ -37,36 +37,41 @@ func main() {
 	// false
 	s0 := "cat"
 	t0 := "car"
-	isAnagram(s0, t0)
-	isAnagram1(s0, t0)
+
 	// true
 	s1 := "listen"
 	t1 := "silent"
-	isAnagram(s1, t1)
-	isAnagram1(s1, t1)
 
 	// true
 	s2 := "newyorktimes"
 	t2 := "monkeyswrite"
-	isAnagram(s2, t2)
-	isAnagram1(s2, t2)
+
 	// false
 	s3 := "listen to your hurt"
 	t3 := "silent hill"
-	isAnagram(s3, t3)
-	isAnagram1(s3, t3)
 
-	//// more compact view of test cases
-	//ss := []string{"cat", "listen", "newyorktimes", "listen toy your heart"}
-	//tt := []string{"car", "silent", "monkeyswrite",  "silent hill"}
-	//
+	fmt.Println("\n\n==========================================================")
+	fmt.Println("\t First Solution. My Own Solution. My First One")
+	fmt.Println("===========================================================\n\n")
+	isAnagram0(s0, t0)
+	isAnagram0(s1, t1)
+	isAnagram0(s2, t2)
+	isAnagram0(s3, t3)
+
+	fmt.Println("\n\n==========================================================")
+	fmt.Println("\t Second Solution. My Second Solution. My Second One")
+	fmt.Println("===========================================================\n\n")
+	isAnagram1(s0, t0)
+	isAnagram1(s1, t1)
+	isAnagram1(s2, t2)
+	isAnagram1(s3, t3)
 
 }
 
 // my own solution
-func isAnagram(s, t string) bool {
+func isAnagram0(s, t string) bool {
 	if len(s) != len(t) {
-		fmt.Printf("false: Not an Anagram. The length of strings [%#s] and [%#s] is not the same.\n\n", s, t)
+		fmt.Printf("false: Solution0. Not an Anagram. The length of strings [%#s] and [%#s] is not the same.\n\n", s, t)
 		return false
 	}
 
@@ -83,18 +88,18 @@ func isAnagram(s, t string) bool {
 
 	for key, _ := range ms {
 		if ms[key] != mt[key] {
-			fmt.Println("false: Not an Anagram.\n")
+			fmt.Println("false: Solution0. Not an Anagram.\n")
 			return false
 		}
 	}
-	fmt.Printf("true: \nms is: %#v\nmt is: %#v\n\n", ms, mt)
+	fmt.Printf("true: Solution0. \nms is: %#v\nmt is: %#v\n\n", ms, mt)
 	return true
 }
 
 // my own solution about a year ago (November 2023)
 func isAnagram1(s string, t string) bool {
 	if len(s) != len(t) {
-		fmt.Printf("false: Not an Anagram. The length of strings [%#s] and [%#s] is not the same.\n\n", s, t)
+		fmt.Printf("false: Solution1. Not an Anagram. The length of strings [%#s] and [%#s] is not the same.\n\n", s, t)
 		return false
 	}
 
@@ -123,11 +128,11 @@ func isAnagram1(s string, t string) bool {
 		_, ok := countT[key]
 
 		if ok == false || countT[key] != countS[key] {
-			fmt.Println("false: Not an Anagram.\n")
+			fmt.Println("false: Solution1. Not an Anagram.\n")
 			return false
 		}
 	}
-	fmt.Printf("true: \ncountS is: %#v\ncountT is: %#v\n\n", countS, countT)
+	fmt.Printf("true: Solution1. \ncountS is: %#v\ncountT is: %#v\n\n", countS, countT)
 	return true
 
 }
