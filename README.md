@@ -1,9 +1,11 @@
 # Leetcode
 
-241124
+230426
 
-Sunday, November 24, 2024 
+Thursday, April 23, 2026 
 
-# This is my solutions to leetcode problems
+### This is a repo with solutions to leetcode problems.
+
+
 
 
